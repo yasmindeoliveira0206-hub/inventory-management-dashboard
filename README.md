@@ -1,258 +1,172 @@
-# Inventory Management & Logistics Dashboard 
+# English Version
 
-This repository presents a Business Intelligence solution designed for inventory monitoring, international in-transit shipment tracking, and asset auditing of high-performance fitness equipment. The project integrates multiple operational and logistics data sources to provide greater visibility into inventory availability, import pipelines, and product technical specifications.
+## Overview
 
-Its primary objective is to support strategic decision-making related to replenishment planning, procurement activities, product distribution, and efficient management of both available and incoming assets.
+This project presents a Business Intelligence solution developed in Power BI to monitor inventory performance, analyze consumption patterns, and assess stock health. The dashboard consolidates operational inventory data into actionable insights that support replenishment planning, purchasing strategies, and supply chain decision-making.
+
+The solution combines inventory visibility, demand analysis, and geographic insights to help organizations maintain optimal stock levels while minimizing the risks of stockouts and excess inventory.
+
+## Objectives
+
+* Monitor inventory performance and stock availability.
+* Analyze item movement and consumption trends over time.
+* Evaluate inventory health across multiple product categories.
+* Compare current stock levels against historical consumption patterns.
+* Identify regional demand concentrations.
+* Support replenishment planning and purchasing decisions through data-driven insights.
 
 ## Business Context
 
-Managing inventory for large-scale equipment involves significant challenges due to extended replenishment lead times, complex international logistics operations, and the need for detailed asset control.
+Effective inventory management plays a critical role in maintaining service levels while controlling operational costs. Organizations must balance product availability with capital efficiency, ensuring that inventory investments align with actual demand patterns.
 
-To ensure operational predictability, organizations must simultaneously monitor physical inventory levels and products already purchased but still moving through the supply chain.
-
-This project was developed to address these challenges by consolidating inventory, import, and technical asset information into a single analytical platform.
+This project addresses these challenges by integrating inventory indicators, consumption analysis, and regional demand perspectives into a unified analytical environment, enabling proactive decision-making and improved supply chain performance.
 
 ## Dashboard Structure & Analytical Views
 
-### 1. Inventory & Pipeline Overview
+### 1. Stock Analysis
 
-A strategic view designed to monitor inventory levels, logistics movements, and replenishment planning activities.
-
-#### Key Metrics
-
-* Physical inventory available in warehouses.
-* Quantity of products in domestic and international transit.
-* Projected inventory balance considering future arrivals.
-* Number of monitored active SKUs.
-* Inventory distribution by product category.
-
-#### Features
-
-* Consolidated monitoring of the logistics pipeline.
-* Detailed SKU-level visibility.
-* Segmentation by product lines:
-
-  * Bikes;
-  * Ellipticals;
-  * Treadmills;
-  * Strength Equipment.
-* Dynamic filters by commercial relevance and strategic categories.
-
-#### Available Analyses
-
-* Comparison between available inventory and in-transit quantities.
-* Identification of stockout risks and excess inventory scenarios.
-* Support for receiving schedules and distribution planning.
-
----
-
-### 2. Asset Specification & Hardware Tracking
-
-An analytical view focused on the detailed control of technical specifications associated with the equipment portfolio.
+This analytical view focuses on evaluating inventory conditions and identifying opportunities for inventory optimization.
 
 #### Key Metrics
 
-* Quantity of assets by technical configuration.
-* Individual asset control through serial number tracking.
-* Distribution of equipment by hardware specifications.
-* Availability of premium-feature products.
+* Product inventory levels.
+* Average monthly consumption.
+* Total stock availability.
+* Local stock distribution.
+* Suggested replenishment quantities.
+* Inventory health status.
 
 #### Features
 
-* Monitoring of technical attributes relevant to corporate customers.
-* Identification of equipment with advanced capabilities.
-* Segmentation based on specific product characteristics.
+* Detailed SKU-level analysis.
+* Dynamic filtering by product categories.
+* Automated inventory health classification.
+* Visibility into replenishment requirements.
 
-#### Technical Mapping
+#### Inventory Health Categories
 
-* Console size:
+* Healthy Stock.
+* Overstock.
+* Stockout Risk.
 
-  * Small;
-  * Medium;
-  * Large.
+### 2. Demand & Consumption Analysis
 
-* Connectivity features:
+This view provides insights into product movement patterns and changing demand behaviors.
 
-  * Streaming-enabled equipment;
-  * Equipment without integrated connectivity.
+#### Key Metrics
 
-* Tracking of operational attributes and technical observations.
+* Consumption volume over time.
+* Inventory movement trends.
+* Demand fluctuations by period.
+* Historical consumption performance.
+
+#### Features
+
+* Time-series analysis.
+* Seasonality identification.
+* Consumption trend monitoring.
+* Support for forecasting and inventory planning activities.
+
+### 3. Geographic Demand Analysis
+
+This analytical perspective highlights regional demand variations and market concentration.
+
+#### Key Metrics
+
+* Demand distribution by region.
+* Sales volume by geographic area.
+* Regional contribution to overall demand.
+
+#### Features
+
+* Interactive geographic visualizations.
+* Identification of high-demand regions.
+* Support for logistics and commercial planning.
+* Enhanced visibility into regional consumption patterns.
 
 ## Technologies & Tools
 
-* **Power BI:** Development of dashboards and interactive visualizations.
-* **DAX:** Creation of logistics KPIs, inventory metrics, and automated inventory projection calculations.
-* **Power Query (M Language):** ETL processes for data extraction, cleansing, transformation, and consolidation.
-* **Data Modeling:** Design of optimized analytical models supporting fast filtering by SKU, category, and product line.
-* **File Integration:** Automated consolidation of multiple operational spreadsheets into a unified dataset.
+* **Power BI:** Dashboard development and interactive visualization.
+* **DAX:** Creation of inventory indicators, stock health calculations, and analytical measures.
+* **Power Query (M Language):** Data extraction, cleansing, and transformation processes.
+* **Dimensional Modeling:** Structuring analytical models to improve performance and scalability.
+* **Data Visualization Best Practices:** Development of business-oriented dashboards to facilitate decision-making.
 
 ## Technical Challenges Overcome
 
-* **Decentralized Data Integration:**
+* **Inventory Health Classification:**
 
-  * Automated consolidation of independent operational files into a single analytical model while preserving SKU integrity and consistency.
+  * Development of business rules to automatically classify inventory conditions based on stock availability and consumption behavior.
 
-* **Logistics Data Cleansing:**
+* **Demand Pattern Analysis:**
 
-  * Standardization and correction of records containing structural inconsistencies that impacted calculations related to weight, volume, and inventory quantities.
+  * Structuring historical consumption data to identify trends, seasonality, and inventory risks.
 
-* **Missing Data Management:**
+* **Geographic Data Integration:**
 
-  * Implementation of rules to handle incomplete technical attributes without compromising inventory reporting accuracy.
+  * Consolidation of regional information to support spatial demand analysis.
 
-* **Scalable Analytical Modeling:**
+* **Analytical Model Optimization:**
 
-  * Development of a robust structure capable of supporting multiple equipment categories while maintaining high query performance.
+  * Construction of an efficient data model capable of supporting detailed inventory analysis while maintaining high performance.
 
 ## Key Insights
 
-* **Supply Bottleneck Identification:**
+* **Improved Inventory Visibility:**
 
-  * Clear visibility into the imbalance between available warehouse inventory and significant in-transit volumes, highlighting the importance of prioritizing receiving operations and inventory planning.
+  * Enhanced understanding of inventory distribution and stock availability across products.
 
-* **Enhanced Supply Chain Visibility:**
+* **Demand-Driven Replenishment:**
 
-  * Continuous monitoring of the logistics pipeline, reducing uncertainty regarding future product availability.
+  * Identification of replenishment opportunities based on actual consumption behavior.
 
-* **Smart Portfolio Auditing:**
+* **Early Detection of Inventory Risks:**
 
-  * Accurate identification of equipment featuring premium capabilities, such as larger displays and streaming support, enabling more targeted commercial strategies.
+  * Recognition of potential stockouts and overstock situations before operational impacts occur.
 
-* **Improved Decision-Making:**
+* **Support for Strategic Decision-Making:**
 
-  * Delivery of reliable information to procurement, logistics, and sales teams, contributing to more efficient asset management practices.
+  * Delivery of reliable inventory indicators to improve purchasing and supply chain planning processes.
 
----
+## Repository Structure
 
-*This project is part of my professional portfolio in Business Intelligence, Analytics, and Data Engineering applied to Inventory Management, Supply Chain Operations, and Import Logistics, demonstrating my ability to transform complex operational data into actionable business insights.*
-
-_________________________________________________________________________
-
-# Inventory Management & Logistics Dashboard 
-
-Este repositório apresenta uma solução de Business Intelligence desenvolvida para o monitoramento de inventário, rastreamento de mercadorias em trânsito internacional e auditoria de ativos de equipamentos de alta performance do segmento fitness. O projeto integra diferentes fontes de dados operacionais e logísticos para proporcionar maior visibilidade sobre a disponibilidade de estoque, o pipeline de importação e as especificações técnicas dos equipamentos.
-
-O objetivo é apoiar decisões estratégicas relacionadas ao abastecimento, planejamento de compras, distribuição de produtos e gestão eficiente dos ativos disponíveis e futuros.
-
-## Contexto do Negócio
-
-A gestão de estoque de equipamentos de grande porte apresenta desafios significativos devido aos elevados tempos de reposição, complexidade logística internacional e necessidade de controle detalhado dos ativos comercializados.
-
-Para garantir maior previsibilidade operacional, torna-se essencial acompanhar simultaneamente o estoque físico disponível e os volumes já adquiridos que ainda se encontram em trânsito ao longo da cadeia de suprimentos.
-
-Este projeto foi desenvolvido para atender a essa necessidade, consolidando informações de inventário, importação e características técnicas dos equipamentos em uma única plataforma analítica.
-
-## Estrutura dos Dashboards & Visões Analíticas
-
-### 1. Visão Geral de Estoque e Pipeline Logístico (Inventory & Pipeline Overview)
-
-Visão estratégica voltada ao acompanhamento dos níveis de estoque, movimentação logística e planejamento de abastecimento.
-
-#### Principais Métricas
-
-* Estoque físico disponível em armazém.
-* Quantidade de mercadorias em trânsito internacional e nacional.
-* Saldo total projetado considerando recebimentos futuros.
-* Quantidade de SKUs ativos monitorados.
-* Distribuição do estoque por categoria de produto.
-
-#### Funcionalidades
-
-* Monitoramento consolidado do pipeline logístico.
-* Visualização detalhada por SKU.
-* Segmentação por linhas de produtos:
-
-  * Bikes;
-  * Elípticos;
-  * Esteiras;
-  * Equipamentos de Força.
-* Filtros dinâmicos por relevância comercial e categorias estratégicas.
-
-#### Análises Disponíveis
-
-* Comparação entre estoque disponível e volumes em trânsito.
-* Identificação de riscos de ruptura ou excesso de estoque.
-* Apoio ao planejamento de recebimentos e distribuição.
+```text
+inventory-management-dashboard/
+├── Inventory-Management-Dashboard.pbix
+├── README.md
+└── images/
+    ├── stock-analysis.png
+    ├── demand-consumption.png
+    └── geographic-analysis.png
+```
 
 ---
 
-### 2. Auditoria Técnica de Ativos (Asset Specification & Hardware Tracking)
+*This project is part of my portfolio in Business Intelligence and Supply Chain Analytics, demonstrating my ability to transform inventory data into strategic insights that support efficient stock management and data-driven decision-making.*
 
-Visão analítica dedicada ao controle detalhado das características técnicas dos equipamentos presentes no inventário.
+# Versão em Português
 
-#### Principais Métricas
+## Overview
 
-* Quantidade de equipamentos por configuração técnica.
-* Controle individualizado por número de série.
-* Distribuição dos ativos por especificações de hardware.
-* Disponibilidade de equipamentos com recursos premium.
+Este projeto apresenta uma solução de Business Intelligence desenvolvida em Power BI para monitorar a performance do estoque, analisar padrões de consumo e avaliar a saúde do inventário. O dashboard consolida dados operacionais em insights acionáveis que apoiam o planejamento de reposição, estratégias de compras e decisões relacionadas à cadeia de suprimentos.
 
-#### Funcionalidades
+A solução integra visibilidade de estoque, análise de demanda e perspectivas geográficas para auxiliar as organizações a manter níveis adequados de inventário, minimizando riscos de ruptura e excesso de estoque.
 
-* Rastreamento de atributos técnicos relevantes para o mercado corporativo.
-* Identificação de equipamentos com recursos avançados.
-* Segmentação por características específicas de produto.
+## Objetivo
 
-#### Mapeamento Técnico
+* Monitorar a performance e disponibilidade do estoque.
+* Analisar a movimentação e os padrões de consumo ao longo do tempo.
+* Avaliar a saúde do inventário em diferentes categorias de produtos.
+* Comparar níveis atuais de estoque com o histórico de consumo.
+* Identificar concentrações regionais de demanda.
+* Apoiar decisões de reposição e compras baseadas em dados.
 
-* Tamanho do console:
+## Business Context
 
-  * Pequeno;
-  * Médio;
-  * Grande.
+Uma gestão eficiente de estoques é fundamental para garantir níveis adequados de serviço ao cliente, ao mesmo tempo em que controla custos operacionais e otimiza o capital investido em inventário.
 
-* Recursos de conectividade:
-
-  * Compatibilidade com Streaming;
-  * Equipamentos sem conectividade integrada.
-
-* Controle de atributos operacionais e observações técnicas.
-
-## Tecnologias e Ferramentas
-
-* **Power BI:** Desenvolvimento dos dashboards e criação das visualizações interativas.
-* **DAX:** Construção de indicadores logísticos, métricas de inventário e projeções automatizadas de saldo.
-* **Power Query (M Language):** Processos de ETL para consolidação, limpeza e transformação dos dados.
-* **Modelagem de Dados:** Estruturação de modelos otimizados para análises rápidas por SKU, categoria e linha de produto.
-* **Integração de Arquivos:** Consolidação automatizada de múltiplas planilhas operacionais provenientes de diferentes áreas do negócio.
-
-## Desafios Técnicos Superados
-
-* **Unificação de Fontes Descentralizadas:**
-
-  * Consolidação automatizada de arquivos independentes em um único modelo analítico, garantindo integridade e padronização dos SKUs.
-
-* **Tratamento de Dados Logísticos:**
-
-  * Limpeza e padronização de registros contendo inconsistências estruturais que comprometiam cálculos relacionados a peso, cubagem e volumes.
-
-* **Tratamento de Dados Ausentes:**
-
-  * Desenvolvimento de regras para lidar com atributos técnicos incompletos sem comprometer os indicadores de inventário.
-
-* **Escalabilidade do Modelo Analítico:**
-
-  * Construção de uma estrutura capaz de suportar múltiplas categorias de equipamentos mantendo alta performance nas consultas.
-
-## Principais Insights Obtidos
-
-* **Identificação de Gargalos de Abastecimento:**
-
-  * Evidência clara do desbalanceamento entre estoque físico disponível e elevado volume de produtos em trânsito, reforçando a importância do planejamento de recebimento e priorização operacional.
-
-* **Maior Visibilidade da Cadeia de Suprimentos:**
-
-  * Monitoramento contínuo do pipeline logístico, reduzindo incertezas relacionadas à disponibilidade futura dos produtos.
-
-* **Auditoria Inteligente do Portfólio:**
-
-  * Identificação precisa dos equipamentos com características premium, como telas maiores e recursos de streaming, apoiando estratégias comerciais direcionadas.
-
-* **Suporte à Tomada de Decisão:**
-
-  * Disponibilização de informações confiáveis para áreas de compras, logística e vendas, contribuindo para uma gestão mais eficiente dos ativos.
+Este projeto foi desenvolvido para atender a essas necessidades, integrando indicadores de estoque, análises de consumo e perspectivas regionais em um ambiente analítico único, permitindo uma gestão mais proativa e orientada por dados.
 
 ---
 
-*Este projeto integra meu portfólio profissional em Business Intelligence, Analytics e Engenharia de Dados aplicados à Gestão de Inventário, Supply Chain e Logística de Importação, demonstrando minha capacidade de transformar dados operacionais complexos em insights estratégicos para o negócio.*
-
+*Este projeto integra meu portfólio em Business Intelligence e Supply Chain Analytics, demonstrando minha capacidade de transformar dados de inventário em insights estratégicos para apoiar uma gestão de estoques mais eficiente e orientada por dados.*
